@@ -1,0 +1,19 @@
+{
+  "name": "p3-openclassroom",
+  "version": "1.0.0",
+  "description": "Projet 3 openclassroom",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JordanB-Dev/P3_Openclassroom.git"
+  },
+  "author": "Jordan Bachelez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JordanB-Dev/P3_Openclassroom/issues"
+  },
+  "homepage": "https://github.com/JordanB-Dev/P3_Openclassroom#readme"
+}
