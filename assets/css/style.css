@@ -19,12 +19,30 @@ li {
   list-style: none;
 }
 
-header {
+.header_home {
   height: 60px;
   margin-top: 20px;
   border-bottom: 2px solid #cccccc;
 }
-header img {
+.header_home img {
+  display: flex;
+  margin: auto;
+  height: 40px;
+  align-items: center;
+}
+
+.header_page {
+  height: 60px;
+  margin-top: 20px;
+}
+.header_page i {
+  position: absolute;
+  color: #4f4f4f;
+  top: 25px;
+  font-size: 30px;
+  margin-left: 30px;
+}
+.header_page img {
   display: flex;
   margin: auto;
   height: 40px;
