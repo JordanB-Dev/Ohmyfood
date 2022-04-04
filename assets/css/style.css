@@ -88,16 +88,15 @@ li {
 }
 
 .presentation {
-  height: 300px;
+  padding: 50px;
   background: #F5F5F5;
 }
 .presentation h1 {
   text-align: center;
-  padding: 50px;
 }
 .presentation p {
   text-align: center;
-  margin-top: -20px;
+  padding: 20px;
   font-size: 1.2rem;
   color: #5c5c5c;
 }
