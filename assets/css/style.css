@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 *,
 *::after,
 *::before {
@@ -7,7 +8,18 @@
 }
 
 body {
-  background: #FF5733;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  height: 60px;
+  margin: 20px;
+}
+header img {
+  display: flex;
+  margin: auto;
+  height: 40px;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
