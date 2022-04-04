@@ -20,6 +20,27 @@ li {
   list-style: none;
 }
 
+.btn {
+  display: block;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 50px;
+  padding: 0 50px;
+  color: #fff;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  background: linear-gradient(170deg, #FF79DA, #a978e3);
+  border-radius: 30px;
+  border: none;
+}
+.btn a {
+  color: #fff;
+}
+.btn--explore {
+  padding: 15px 25px;
+}
+
 .header_home {
   height: 60px;
   margin-top: 20px;
