@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Shrikhand&display=swap");
 *,
 *::after,
 *::before {
@@ -13,6 +13,7 @@ body {
 
 a {
   text-decoration: none;
+  color: #000;
 }
 
 li {
@@ -53,12 +54,36 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 20px;
   height: 60px;
-  background: #e6e6e6;
+  background: #ebebeb;
+}
+.location p {
+  font-size: 1.5rem;
+  font-weight: 700;
 }
 .location i {
   margin-right: 10px;
+  font-size: 20px;
+}
+
+.presentation {
+  height: 300px;
+  background: #F5F5F5;
+}
+.presentation h1 {
+  text-align: center;
+  padding: 50px;
+}
+.presentation p {
+  text-align: center;
+  margin-top: -20px;
+  font-size: 1.2rem;
+  color: #5c5c5c;
+}
+.presentation a {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */
