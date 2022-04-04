@@ -1,6 +1,7 @@
 header{
     height: 60px;
-    margin: 20px;
+    margin-top: 20px;
+    border-bottom: 2px solid darken($gray, 16%);
     img{
         display: flex;
         margin: auto;
