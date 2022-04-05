@@ -1,0 +1,19 @@
+
+.presentation {
+    padding: 50px;
+    background: $gray;
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        padding: 20px;
+        font-size: 1.2rem;
+        color: darken($gray, 60%);
+    }
+    a{
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+}
