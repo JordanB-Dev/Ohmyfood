@@ -1,0 +1,5 @@
+@mixin breakpoints($version) {
+    @media screen and (max-width: map-get($breakpoints, $version)){
+        @content;
+    }
+}
