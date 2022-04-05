@@ -1,3 +1,7 @@
+@mixin shadow($color: darken($gray, 20%)) {
+    box-shadow: 0 3px 7px $color;
+}
+
 @mixin breakpoints($version) {
     @media screen and (max-width: map-get($breakpoints, $version)){
         @content;
