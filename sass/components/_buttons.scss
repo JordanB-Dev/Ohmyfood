@@ -11,6 +11,7 @@
     background: linear-gradient(170deg, $secondary, lighten($primary, 8%));
     border-radius: 30px;
     border: none;
+    @include shadow;
     a{
         color: $white;
     }

@@ -33,6 +33,7 @@ li {
   background: linear-gradient(170deg, #FF79DA, #a978e3);
   border-radius: 30px;
   border: none;
+  box-shadow: 0 3px 7px #b5b5b5;
 }
 .btn a {
   color: #fff;
