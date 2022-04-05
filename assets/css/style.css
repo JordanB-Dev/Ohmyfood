@@ -41,6 +41,9 @@ li {
 .btn--explore {
   padding: 15px 25px;
 }
+.btn:hover {
+  transform: scale(1.1);
+}
 
 .header_home {
   height: 60px;
