@@ -12,6 +12,9 @@
     border-radius: 30px;
     border: none;
     @include shadow;
+    @include breakpoints(tablet){
+        font-size: 0.8rem;
+    }
     a{
         color: $white;
     }

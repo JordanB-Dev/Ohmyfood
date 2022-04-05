@@ -35,6 +35,11 @@ li {
   border: none;
   box-shadow: 0 3px 7px #b5b5b5;
 }
+@media screen and (max-width: 600px) {
+  .btn {
+    font-size: 0.8rem;
+  }
+}
 .btn a {
   color: #fff;
 }
