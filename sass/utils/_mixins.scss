@@ -2,6 +2,11 @@
     box-shadow: 0 3px 7px $color;
 }
 
+@mixin container {
+    max-width: 1800px;
+    margin: auto;
+}
+
 @mixin breakpoints($version) {
     @media screen and (max-width: map-get($breakpoints, $version)){
         @content;
