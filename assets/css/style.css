@@ -50,6 +50,11 @@ li {
   transform: scale(1.1);
 }
 
+.container {
+  max-width: 1800px;
+  margin: auto;
+}
+
 .header_home {
   height: 60px;
   margin-top: 20px;
@@ -113,6 +118,23 @@ li {
   display: flex;
   justify-content: center;
   margin-top: 50px;
+}
+
+.functioning {
+  padding: 50px;
+}
+.functioning h2 {
+  display: flex;
+  justify-content: center;
+}
+
+.functioning-list {
+  display: flex;
+  padding: 40px;
+  justify-content: space-between;
+}
+.functioning-list .functioning_tab {
+  display: flex;
 }
 
 /*# sourceMappingURL=style.css.map */

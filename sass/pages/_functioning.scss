@@ -1,0 +1,16 @@
+.functioning {
+    padding: 50px;
+    h2{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.functioning-list {
+    display: flex;
+    padding: 40px;
+    justify-content: space-between;
+    .functioning_tab{
+        display: flex;
+    }
+}
