@@ -130,11 +130,12 @@ li {
 @media screen and (max-width: 1024px) {
   .functioning h2 {
     justify-content: flex-start;
+    margin-left: -2rem;
   }
 }
 .functioning_list {
   display: flex;
-  padding: 40px 0 40px 0;
+  padding: 30px 0 0 0;
 }
 @media screen and (max-width: 1024px) {
   .functioning_list {

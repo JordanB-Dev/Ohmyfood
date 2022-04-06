@@ -5,11 +5,12 @@
         justify-content: center;
         @include breakpoints(desktop){
             justify-content: flex-start;
+            margin-left: -2rem;
         }
     }
         &_list {
             display: flex;
-            padding: 40px 0 40px 0;
+            padding: 30px 0 0 0;
             @include breakpoints(desktop){
                 flex-direction: column;
                 align-items: center;
