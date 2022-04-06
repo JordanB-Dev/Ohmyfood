@@ -155,6 +155,9 @@ li {
 .functioning_tab:hover {
   background-color: #e9ddf8;
 }
+.functioning_tab:hover i {
+  color: #9356DC;
+}
 .functioning_number {
   position: relative;
   display: flex;
@@ -184,9 +187,6 @@ li {
   margin-right: 1rem;
   color: #5c5c5c;
   font-size: 1.3rem;
-}
-.functioning i.fas.fa-store {
-  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */

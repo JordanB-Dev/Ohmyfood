@@ -26,6 +26,9 @@
             @include shadow;
             &:hover{
                 background-color: lighten($primary, 32%);
+                i{
+                    color: $primary;
+                }
         }
     }
         &_number{
@@ -55,8 +58,5 @@
                 margin-right: 1rem;
                 color: darken($gray, 60%);
                 font-size: 1.3rem;
-                &.fas.fa-store{
-                    color: $primary;
-            }
         }
 }
