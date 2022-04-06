@@ -127,14 +127,66 @@ li {
   display: flex;
   justify-content: center;
 }
-
-.functioning-list {
-  display: flex;
-  padding: 40px;
-  justify-content: space-between;
+@media screen and (max-width: 1024px) {
+  .functioning h2 {
+    justify-content: flex-start;
+  }
 }
-.functioning-list .functioning_tab {
+.functioning_list {
   display: flex;
+  padding: 40px 0 40px 0;
+}
+@media screen and (max-width: 1024px) {
+  .functioning_list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.functioning_tab {
+  display: flex;
+  background: #F5F5F5;
+  border-radius: 2rem;
+  padding: 25px;
+  margin: 1rem;
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 0 3px 7px #b5b5b5;
+}
+.functioning_tab:hover {
+  background-color: #e9ddf8;
+}
+.functioning_number {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background: #9356DC;
+  right: 40px;
+  height: 30px;
+  width: 30px;
+  border-radius: 1rem;
+}
+.functioning_text {
+  position: relative;
+  display: flex;
+  align-items: center;
+  right: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+  .functioning_text {
+    font-size: 1rem;
+  }
+}
+.functioning i {
+  margin-right: 1rem;
+  color: #5c5c5c;
+  font-size: 1.3rem;
+}
+.functioning i.fas.fa-store {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */

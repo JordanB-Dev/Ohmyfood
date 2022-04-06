@@ -3,14 +3,60 @@
     h2{
         display: flex;
         justify-content: center;
+        @include breakpoints(desktop){
+            justify-content: flex-start;
+        }
     }
-}
-
-.functioning-list {
-    display: flex;
-    padding: 40px;
-    justify-content: space-between;
-    .functioning_tab{
-        display: flex;
+        &_list {
+            display: flex;
+            padding: 40px 0 40px 0;
+            @include breakpoints(desktop){
+                flex-direction: column;
+                align-items: center;
+        }
     }
+        &_tab{
+            display: flex;
+            background: $gray;
+            border-radius: 2rem;
+            padding: 25px;
+            margin: 1rem;
+            width: 100%;
+            cursor: pointer;
+            @include shadow;
+            &:hover{
+                background-color: lighten($primary, 32%);
+        }
+    }
+        &_number{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            background: $primary;
+            right: 40px;
+            height: 30px;
+            width: 30px;
+            border-radius: 1rem;
+    }
+        &_text{
+            position: relative;
+            display: flex;
+            align-items: center;
+            right: 20px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            @include breakpoints(tablet){
+                font-size: 1rem;
+        }
+    }
+            i{
+                margin-right: 1rem;
+                color: darken($gray, 60%);
+                font-size: 1.3rem;
+                &.fas.fa-store{
+                    color: $primary;
+            }
+        }
 }
