@@ -32,6 +32,7 @@
         left: 0;
         background: linear-gradient(170deg, $secondary, $primary);
         -webkit-background-clip: text;
+        background-clip: text;
         color: transparent;
         transform: scale(0);
         transition: transform 200ms 50ms ease-in-out;
