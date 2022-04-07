@@ -8,10 +8,11 @@
             display: flex;
             font-size: 1.9rem;
             justify-content: center;
-            margin-bottom: 3rem;
+            margin-bottom: 0.9rem;
             @include breakpoints(desktop){
                 justify-content: flex-start;
                 font-size: 1.8rem;
+                margin-left: 1rem;
         }
     }
     &_list {
