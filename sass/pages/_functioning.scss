@@ -2,9 +2,11 @@
     padding: 50px;
     h2{
         display: flex;
+        font-size: 2rem;
         justify-content: center;
         @include breakpoints(desktop){
             justify-content: flex-start;
+            font-size: 1.8rem;
             margin-left: -2rem;
         }
     }
