@@ -1,0 +1,32 @@
+footer{
+    background: darken($gray, 75%);
+    color: $white;
+    padding: 20px 25px 30px;
+    h3{
+        font-family: 'Shrikhand', cursive;
+        font-weight: 400;
+        margin-bottom: 13px;
+        font-size: 1.1rem;
+    }
+
+    a{
+        color: $white;
+        line-height: 1.7rem;
+        i{
+            font-size: .8rem;
+            width: 9px;
+            margin-right: 10px;
+        }
+    }
+    @include breakpoints(tablet){
+        h3{
+            font-size: 1.3rem;
+        }
+        a{
+            font-size: 1.1rem;
+            i{
+                font-size: 1rem;
+            }
+        }
+    }
+}
