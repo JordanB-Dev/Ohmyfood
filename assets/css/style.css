@@ -407,8 +407,9 @@ footer a i {
 }
 .menu_tab {
   display: flex;
+  position: relative;
   justify-content: space-between;
-  background: #99E2D0;
+  background: #fff;
   width: 95%;
   margin: 0 0 20px 0;
   border-radius: 1rem;
@@ -426,6 +427,9 @@ footer a i {
   padding: 15px 0 15px 14px;
   justify-content: space-between;
   overflow: hidden;
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: width 250ms 100ms linear;
 }
 .menu_text h3 {
   font-weight: 600;
@@ -444,13 +448,55 @@ footer a i {
   text-overflow: ellipsis;
 }
 .menu_price {
-  align-self: flex-end;
   color: #363636;
   font-weight: 700;
-  position: relative;
+  position: absolute;
   right: 15px;
   bottom: 15px;
-  margin-left: 30px;
+  transform-origin: right;
+  transition: transform 250ms 100ms linear;
+}
+.menu .animation {
+  display: flex;
+  background-color: #99E2D0;
+  width: 72px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform 250ms 100ms linear;
+}
+.menu .animation .anim_icon {
+  color: #fff;
+  font-size: 1.6rem;
+  margin: auto;
+  transform: rotate(0deg);
+  transition: transform 250ms 100ms linear;
+}
+
+.menu_tab:hover .menu_text {
+  width: 50%;
+}
+.menu_tab:hover .menu_text h3, .menu_tab:hover .menu_text p {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.menu_tab:hover .animation {
+  transform: scaleX(1);
+}
+.menu_tab:hover .anim_icon {
+  transform: rotate(360deg);
+  transition-delay: 0.5s;
+}
+.menu_tab:hover .menu_price {
+  transform: translateX(-70px);
+}
+
+.com {
+  position: relative;
+  top: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

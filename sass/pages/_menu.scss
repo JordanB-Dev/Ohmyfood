@@ -50,8 +50,9 @@
     }
     &_tab {
         display: flex;
+        position: relative;
         justify-content: space-between;
-        background: $green;
+        background: $white;
         width: 95%;
         margin: 0 0 20px 0;
         border-radius: 1rem;
@@ -67,6 +68,9 @@
         padding: 15px 0 15px 14px;
         justify-content: space-between;
         overflow: hidden;
+        transform: scaleX(1);
+        transform-origin: left;
+        transition: width 250ms 100ms linear;
         h3 {
             font-weight: 600;
             font-size: 1.1rem;
@@ -85,12 +89,57 @@
         }
     }
     &_price {
-        align-self: flex-end;
         color: darken($gray, 75%);
         font-weight: 700;
-        position: relative;
+        position: absolute;
         right: 15px;
         bottom: 15px;
-        margin-left: 30px;
+        transform-origin: right;
+        transition: transform 250ms 100ms linear;
+    }
+    .animation{
+        display: flex;
+        background-color: $green;
+        width: 72px;
+        transform-origin: right;
+        transform: scaleX(0);
+        transition: transform 250ms 100ms linear;
+        .anim_icon{
+            color: $white;
+            font-size: 1.6rem;
+            margin: auto;
+            transform: rotate(0deg);
+            transition: transform 250ms 100ms linear;
+        }
     }
 }
+.menu_tab { 
+    &:hover .menu_text{
+        width: 50%;
+        h3, p{
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+    &:hover .animation{
+        transform: scaleX(1);
+    }
+    &:hover .anim_icon{
+        transform: rotate(360deg);
+        transition-delay: 0.50s;
+    }
+    &:hover .menu_price{
+        transform: translateX(-70px);
+    }
+}
+
+.com {
+    position: relative;
+    top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
