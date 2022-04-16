@@ -4,7 +4,8 @@
   "description": "Projet 3 openclassroom",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:assets/css/style.css"
+    "sass": "sass --watch ./sass/main.scss:assets/css/style.css",
+    "prefix": "postcss ./assets/css/style.css --use autoprefixer -d ./assets/css/"
   },
   "repository": {
     "type": "git",
@@ -12,6 +13,7 @@
   },
   "author": "Jordan Bachelez",
   "license": "MIT",
+  "browserslist": "last 4 versions",
   "bugs": {
     "url": "https://github.com/JordanB-Dev/P3_Openclassroom/issues"
   },
