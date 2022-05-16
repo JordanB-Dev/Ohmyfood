@@ -5,9 +5,9 @@
     z-index: 998;
     inset: 0;
     opacity: 0.8;
-    animation: loader 3s;
+    animation: loader 5s;
     animation-fill-mode: forwards;
-        .fas.fa-spinner{
+        i{
             display: flex;
             position: relative;
             justify-content: center;
@@ -19,7 +19,8 @@
 }
 
 @keyframes loader {
-    to {
+    100% {
+        opacity: 0;
         z-index: -10;
       }
 }
