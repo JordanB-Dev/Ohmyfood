@@ -146,7 +146,8 @@ footer a i {
   font-size: 1.2rem;
   color: #5c5c5c;
 }
-.presentation a {
+
+.btn_presentation {
   display: flex;
   justify-content: center;
   margin-top: 50px;

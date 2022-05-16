@@ -11,9 +11,10 @@
         font-size: 1.2rem;
         color: darken($gray, 60%);
     }
-    a{
-        display: flex;
-        justify-content: center;
-        margin-top: 50px;
-    }
+}
+
+.btn_presentation {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
 }
