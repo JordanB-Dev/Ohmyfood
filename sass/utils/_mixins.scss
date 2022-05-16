@@ -38,3 +38,11 @@
         transition: transform 200ms 50ms ease-in-out;
     }
 }
+
+@mixin menu {
+    @for $i from 2 through 4 {
+        &:nth-child(#{$i}) {
+            animation-delay: 100ms * $i;
+        }
+    }
+}

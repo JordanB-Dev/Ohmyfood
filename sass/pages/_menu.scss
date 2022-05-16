@@ -62,6 +62,9 @@
         overflow: hidden;
         height: 65px;
         cursor: pointer;
+        animation: menu 1s;
+        animation-fill-mode: both;
+        @include menu;
         @include shadow;
         @include breakpoints(desktop){
             width: 100%;
@@ -95,10 +98,10 @@
         color: darken($gray, 75%);
         font-weight: 700;
         position: absolute;
-        right: 15px;
+        right: 25px;
         bottom: 15px;
         transform-origin: right;
-        transition: transform 250ms 100ms linear;
+        transition: transform 300ms 100ms linear;
     }
     .animation{
         display: flex;
@@ -106,13 +109,13 @@
         width: 72px;
         transform-origin: right;
         transform: scaleX(0);
-        transition: transform 250ms 100ms linear;
+        transition: transform 300ms 150ms linear;
         .anim_icon{
             color: $white;
             font-size: 1.6rem;
             margin: auto;
             transform: rotate(0deg);
-            transition: transform 250ms 100ms linear;
+            transition: transform 500ms 100ms linear;
         }
     }
 }
@@ -130,7 +133,6 @@
     }
     &:hover .anim_icon{
         transform: rotate(360deg);
-        transition-delay: 0.50s;
     }
     &:hover .menu_price{
         transform: translateX(-70px);
@@ -145,4 +147,13 @@
     justify-content: center;
 }
 
-
+@keyframes menu {
+   0% {
+       transform: translateY(50%);
+       opacity: 0;
+   }
+   100% {
+       transform: translateX(0);
+       opacity: 1;
+   }
+  }

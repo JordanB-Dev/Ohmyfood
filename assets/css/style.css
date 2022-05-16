@@ -50,6 +50,36 @@ li {
   transform: scale(1.1);
 }
 
+.loader {
+  position: fixed;
+  background: #fff;
+  height: 100vh;
+  z-index: 998;
+  inset: 0;
+  opacity: 0.8;
+  animation: loader 3s;
+  animation-fill-mode: forwards;
+}
+.loader .fas.fa-spinner {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  top: 30%;
+  font-size: 8rem;
+  color: #9356DC;
+  animation: spin 10s linear;
+}
+
+@keyframes loader {
+  to {
+    z-index: -10;
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
 .container {
   max-width: 1850px;
   margin: auto;
@@ -422,7 +452,18 @@ footer a i {
   overflow: hidden;
   height: 65px;
   cursor: pointer;
+  animation: menu 1s;
+  animation-fill-mode: both;
   box-shadow: 0 3px 7px #b5b5b5;
+}
+.menu_tab:nth-child(2) {
+  animation-delay: 200ms;
+}
+.menu_tab:nth-child(3) {
+  animation-delay: 300ms;
+}
+.menu_tab:nth-child(4) {
+  animation-delay: 400ms;
 }
 @media screen and (max-width: 1024px) {
   .menu_tab {
@@ -457,10 +498,10 @@ footer a i {
   color: #363636;
   font-weight: 700;
   position: absolute;
-  right: 15px;
+  right: 25px;
   bottom: 15px;
   transform-origin: right;
-  transition: transform 250ms 100ms linear;
+  transition: transform 300ms 100ms linear;
 }
 .menu .animation {
   display: flex;
@@ -468,14 +509,14 @@ footer a i {
   width: 72px;
   transform-origin: right;
   transform: scaleX(0);
-  transition: transform 250ms 100ms linear;
+  transition: transform 300ms 150ms linear;
 }
 .menu .animation .anim_icon {
   color: #fff;
   font-size: 1.6rem;
   margin: auto;
   transform: rotate(0deg);
-  transition: transform 250ms 100ms linear;
+  transition: transform 500ms 100ms linear;
 }
 
 .menu_tab:hover .menu_text {
@@ -491,7 +532,6 @@ footer a i {
 }
 .menu_tab:hover .anim_icon {
   transform: rotate(360deg);
-  transition-delay: 0.5s;
 }
 .menu_tab:hover .menu_price {
   transform: translateX(-70px);
@@ -503,6 +543,17 @@ footer a i {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@keyframes menu {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
