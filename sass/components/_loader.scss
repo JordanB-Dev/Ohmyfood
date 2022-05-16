@@ -1,0 +1,31 @@
+.loader {
+    position: fixed;
+    background: $white;
+    height: 100vh;
+    z-index: 998;
+    inset: 0;
+    opacity: 0.8;
+    animation: loader 3s;
+    animation-fill-mode: forwards;
+        .fas.fa-spinner{
+            display: flex;
+            position: relative;
+            justify-content: center;
+            top: 30%;
+            font-size: 8rem;
+            color: $primary;
+            animation: spin 10s linear;
+        }
+}
+
+@keyframes loader {
+    to {
+        z-index: -10;
+      }
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
