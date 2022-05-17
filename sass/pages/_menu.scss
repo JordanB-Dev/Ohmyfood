@@ -73,7 +73,6 @@
     &_text {
         padding: 15px 0 15px 14px;
         justify-content: space-between;
-        overflow: hidden;
         transform: scaleX(1);
         transform-origin: left;
         transition: width 250ms 100ms linear;
@@ -81,17 +80,11 @@
             font-weight: 600;
             font-size: 1.1rem;
             margin-bottom: 5px;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
         }
         p {
             margin: 0;
             font-weight: 300;
             font-size: 0.95rem;
-            overflow: hidden;
-            white-space: nowrap;
-            text-overflow: ellipsis;
         }
     }
     &_price {
@@ -122,10 +115,10 @@
 .menu_tab { 
     &:hover .menu_text{
         width: 50%;
-        h3, p{
+        h3,p {
+            animation: ellipse 0.5s forwards;
             overflow: hidden;
             white-space: nowrap;
-            text-overflow: ellipsis;
         }
     }
     &:hover .animation{
@@ -157,3 +150,9 @@
        opacity: 1;
    }
   }
+
+  @keyframes ellipse {
+    to {
+        text-overflow: ellipsis;
+    }
+   }
