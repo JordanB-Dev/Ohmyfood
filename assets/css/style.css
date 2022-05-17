@@ -517,7 +517,7 @@ footer a i {
   width: 50%;
 }
 .menu_tab:hover .menu_text h3, .menu_tab:hover .menu_text p {
-  animation: ellipse 0.5s forwards;
+  animation: ellipse 0.8s forwards;
   overflow: hidden;
   white-space: nowrap;
 }
