@@ -492,7 +492,7 @@ footer a i {
   color: #363636;
   font-weight: 700;
   position: absolute;
-  right: 40px;
+  right: 25px;
   bottom: 15px;
   transform-origin: right;
   transition: transform 300ms 100ms linear;
